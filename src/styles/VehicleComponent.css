@@ -1,0 +1,33 @@
+.status-tooltip {
+  position: relative;
+  z-index: 10;
+  /* top: 10px; */
+  /* left: 10px; */
+}
+
+.status-popup {
+  position: absolute;
+  background-color: #ffffff;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 2px;
+  /* borde/r-radius: 5px; */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* display:/ none; */
+  font-size: 12px;
+}
+.status-popup.NotStarted {
+  background-color: darkblue;
+}
+
+.status-popup.Closed {
+  background-color: #880707; /* Red background for Inactive status */
+}
+
+.status-popup.Ongoing {
+  background-color: #004e00; /* Green background for Ongoing status */
+}
+
+.status-tooltip:hover .status-popup {
+  display: block;
+}
